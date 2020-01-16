@@ -8,8 +8,8 @@ app.get("/", (req, res) => {
   res.header("Content-Type", "text/html");
   console.log(`Node PID ${process.pid} Handling request of ${req.hostname}...`);
   res.send(`
-    <h1>Node PID: ${process.pid}</h1>
-    Hi ${process.env.MESSAGE}!
+    <h1>Hi ${process.env.MESSAGE}!</h1>
+    Node PID: ${process.pid}
   `);
 });
 
